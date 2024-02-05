@@ -4,12 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de Reservación</title>
+    <link rel="stylesheet" href="stylesheet_formulario.css">
 </head>
 <body>
     <h1>Formulario de Reservación</h1>
-    <p>En el siguiente formulario podrás registrarte para reservar tu próxima visita a Berlín. <strong>¡Buen Viaje!</strong></p>
+    <p>En el siguiente formulario podrás registrarte para reservar tu próxima visita a Berlín.</p>
+        <p><strong>¡Buen Viaje!</strong></p>
+    <form action="/my-handling-form-page" method="post">
+        <ul>
+        <h2>Reservación</h2>
+        <h3>Información personal</h3>
+          <li>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="user_name" />
+          </li>
+          <li>
+            <label for="mail">Email:</label>
+            <input type="email" id="mail" name="user_email" />
+          </li>
+          <li>
+            <label for="age">Edad:</label>
+            <input type="text" id="age" name="user_age" />
+          </li>
+          <h3>Fecha de estancia</h3>
+          <li>
+            <label for="arrival">Fecha de llegada:</label>
+            <input type="date" id="arrival" />
+          </li>
+          <li>
+            <label for="departure">Fecha de ida:</label>
+            <input type="date" id="departure" />
+          </li>
+          <h3>Dirección</h3>
+          <li>
+            <label for="street">Calle:</label>
+            <input type="text" id="street" name="user_street" />
+          </li>
+          <li>
+            <label for="neighborhood">Colonia:</label>
+            <input type="text" id="neighborhood" name="user_neighborhood" />
+          </li>
+          <li>
+            <label for="postalcode">Código postal:</label>
+            <input type="text" id="postalcode" name="user_postalcode" />
+          </li>
+          <h3>Comentarios</h3>
+            <li>
+                <label for="msg1">¿Por qué has elegido Berlín?:</label>
+                <textarea id="msg1" name="user_message"></textarea>
+              </li>
+              <li>
+                <label for="msg2">¿Cuál es el atractivo turístico que más esperas visitar?:</label>
+                <textarea id="msg2" name="user_message"></textarea>
+              </li>
+              <li>
+                <label for="msg3">¿Cómo podemos hacer tu estancia en Berlín más agradable?:</label>
+                <textarea id="msg3" name="user_message"></textarea>
+              </li>
+              <li class="button">
+                <button type="submit">Enviar</button>
+              </li>
+        </ul>
+      </form>      
 
-    
     <p><a href="index.html">Regresar a la Portada</a></p>
     <p>Por Mauricio D. Rascón</p>
     <p>mauriciodaiki@outlook.com</p>
