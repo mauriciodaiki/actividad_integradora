@@ -9,13 +9,20 @@
          background: #b22222;
          padding: 0 100px;
         }
-        .title {
+        .title_container {
+            display: flex;
             background: #ffd700;
+            padding: 0 20px;
+        }
+        .title_text {
             color: black;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             text-align: left;
             font-size: 50px;
-            padding: 0 30px;
+        }
+        .intro_container {
+            display: flex;
+            align-items: center;
         }
         .intro {
             color: #ffd700;
@@ -23,19 +30,27 @@
             text-align: left;
             font-weight: bold;
             font-size: 22px;
+            flex: 1;
         }
         .image {
             display: block;
             margin: auto;
         }
-        .menu {
+        .menu_container {
             background: #ffd700;
+            display: flex;
+            padding: 0 20px;
+        }
+        .menu {
             color: black;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             text-align: left;
             font-size: 40px;
             padding: 0 30px;
-
+        }
+        .list_container {
+            display: flex;
+            padding: 30px 0;
         }
         .list {
             color: #ffd700;
@@ -53,17 +68,30 @@
         .credits {
             color:#ffd700;
             font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+        }
+        .credits_container {
+            border: 1px solid #ffd700;
+            display: flex;
+            justify-content: space-around;
         }
         </style>
 </head>
 <body>
-    <h1 class="title">¡Visita Berlín!</h1>
+    <div class="title_container">
+    <h1 class="title_text">¡Visita Berlín!</h1>
+    </div>
+    <div class="intro_container">
     <p class="intro">Berlín es una ciudad vibrante, con una gran variedad de museos y centros culturales para visitar. También
         podrás relajarte y comer en los cafés y restaurantes que ofrece la ciudad. Déjate sorprender por una de
         las ciudades más históricas e importantes de Europa.</p>
     <img src="https://cdn.britannica.com/39/6839-050-27891400/Brandenburg-Gate-Berlin.jpg"
     alt="The Brandenburg Gate, Berlin." style="width:500px;" class="image">
+    </div>
+    <div class="menu_container">
     <h2 class="menu">Menú</h2>
+    </div>
+    <div class="list_container">
     <ul class="list">
         <li><a class="list_element" href="historia.html">Historia de Berlín</a></li>
         <li><a class="list_element" href="atractivos.html">Atractivos de Berlín</a></li>
@@ -71,7 +99,10 @@
         <li><a class="list_element" href="reservacion.html">Formulario de Reservación</a></li>
         <li><a class="list_element" href="musica.html">Música en Berlín</a></li>
         </ul>
+    </div>
+    <div class="credits_container">
     <p class="credits">Por Mauricio D. Rascón</p>
     <p class="credits">mauriciodaiki@outlook.com</p>
+    </div>
 </body>
 </html>
