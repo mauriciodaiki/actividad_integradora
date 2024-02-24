@@ -4,105 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portada: Visita Berlín</title>
-    <style>
-        body {
-         background: #b22222;
-         padding: 0 100px;
-        }
-        .title_container {
-            display: flex;
-            background: #ffd700;
-            padding: 0 20px;
-        }
-        .title_text {
-            color: black;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            text-align: left;
-            font-size: 50px;
-        }
-        .intro_container {
-            display: flex;
-            align-items: center;
-        }
-        .intro {
-            color: #ffd700;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            text-align: left;
-            font-weight: bold;
-            font-size: 22px;
-            flex: 1;
-        }
-        .image {
-            display: block;
-            margin: auto;
-        }
-        .menu_container {
-            background: #ffd700;
-            display: flex;
-            padding: 0 20px;
-        }
-        .menu {
-            color: black;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            text-align: left;
-            font-size: 40px;
-            padding: 0 30px;
-        }
-        .list_container {
-            display: flex;
-            padding: 30px 0;
-        }
-        .list {
-            color: #ffd700;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            text-align: left;
-            list-style-type: none;
-            padding: 0 0 30px;
-            font-weight: bold;
-            font-size: 22px;
-        }
-        .list_element {
-            text-decoration: none;
-            color:#ffd700;
-        }
-        .credits {
-            color:#ffd700;
-            font-family: 'Courier New', Courier, monospace;
-            font-weight: bold;
-        }
-        .credits_container {
-            border: 1px solid #ffd700;
-            display: flex;
-            justify-content: space-around;
-        }
-        </style>
+    <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
-    <div class="title_container">
-    <h1 class="title_text">¡Visita Berlín!</h1>
-    </div>
-    <div class="intro_container">
-    <p class="intro">Berlín es una ciudad vibrante, con una gran variedad de museos y centros culturales para visitar. También
-        podrás relajarte y comer en los cafés y restaurantes que ofrece la ciudad. Déjate sorprender por una de
-        las ciudades más históricas e importantes de Europa.</p>
-    <img src="https://cdn.britannica.com/39/6839-050-27891400/Brandenburg-Gate-Berlin.jpg"
-    alt="The Brandenburg Gate, Berlin." style="width:500px;" class="image">
-    </div>
-    <div class="menu_container">
-    <h2 class="menu">Menú</h2>
-    </div>
-    <div class="list_container">
-    <ul class="list">
+    <h1 id="titulo">¡Visita Berlín!</h1>
+    <div class="row">
+        <div class="col-12">
+    <h2 id="menu">Menú</h2>
+    <ul id="list">
         <li><a class="list_element" href="historia.html">Historia de Berlín</a></li>
         <li><a class="list_element" href="atractivos.html">Atractivos de Berlín</a></li>
         <li><a class="list_element" href="testimonios.html">Testimonios de Visitantes</a></li>
         <li><a class="list_element" href="reservacion.html">Formulario de Reservación</a></li>
         <li><a class="list_element" href="musica.html">Música en Berlín</a></li>
         </ul>
+        </div>
+    <div class="col-6">
+    <p id="intro">Berlín es una ciudad vibrante, con una gran variedad de museos y centros culturales para visitar. También
+        podrás relajarte y comer en los cafés y restaurantes que ofrece la ciudad. Déjate sorprender por una de
+        las ciudades más históricas e importantes de Europa.</p>
     </div>
-    <div class="credits_container">
+    <div class="col-6">
+    <img src="https://cdn.britannica.com/39/6839-050-27891400/Brandenburg-Gate-Berlin.jpg"
+    alt="The Brandenburg Gate, Berlin." style="width:500px;" class="image">
+    </div>
+    <div class="col-12">
     <p class="credits">Por Mauricio D. Rascón</p>
     <p class="credits">mauriciodaiki@outlook.com</p>
     </div>
+</div>
 </body>
 </html>
