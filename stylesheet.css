@@ -1,0 +1,123 @@
+    * {
+        box-sizing: border-box;
+    }
+
+@media only screen and (max-width: 768px) {
+        [class*="col-"] {
+          width: 100%;
+        }
+        body {
+            background-color: #E94F37;
+        }
+        #menu {
+            color: #E94F37;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: left;
+            font-size: 30px;
+            padding: 0 30px;
+            background: #ffd700;
+            padding: 0 20px;
+        }
+        #list {
+            color: #E94F37;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: left;
+            list-style-type: none;
+            padding: 0 0 30px;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        #intro {
+            color: #ffd700;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: left;
+            font-weight: bold;
+            font-size: 20px;
+        }
+    }
+@media only screen and (min-width: 768px) {
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+    
+    body {
+    background-color: #9A998C;
+    }
+    #menu {
+        color: black;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: left;
+        font-size: 40px;
+        padding: 0 30px;
+        background: #ffd700;
+        padding: 0 20px;
+    }
+    #list {
+        color: #ffd700;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: left;
+        list-style-type: none;
+        padding: 0 0 30px;
+        font-weight: bold;
+        font-size: 22px;
+    }
+  }
+    [class*="col-"] {
+        float: left;
+        padding: 15px;
+    }
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+   #titulo {
+       color: black;
+       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+       text-align: left;
+       font-size: 50px;
+       background: #ffd700;
+       padding: 0 20px;
+   }
+   #intro {
+       color: #ffd700;
+       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+       text-align: left;
+       font-weight: bold;
+       font-size: 22px;
+       flex: 1;
+   }
+   .image {
+       display: block;
+       margin: auto;
+       max-width: 100%;
+       height: auto;
+   }
+
+   .list_element {
+       text-decoration: none;
+       color:#ffd700;
+   }
+   .credits {
+       color:#ffd700;
+       font-family: 'Courier New', Courier, monospace;
+       font-weight: bold;
+   }
+   a:link {
+       color:#ffd700;
+   }
+   a:hover {
+    color: #F4FFFD;
+   }
+   a:active {
+    color: #393E41;
+   }
